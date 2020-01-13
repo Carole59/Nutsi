@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="author" content="Woodstock">
+    <meta name="description" content="Mon site parle de préparation d'un mariage">
+    <meta name="keywords" content="html, css, tags, balises">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <link href="https://fonts.googleapis.com/css?family=Cookie&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shojumaru&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+    <title>
+        NUTSI
+    </title>
+</head>
+
+<main class="backImglogin text-align-center">
+    <div class="colorConnect margin-login-block text-align-center">
+        {% trans_default_domain 'FOSUserBundle' %}
+        <div>
+            {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+                {{ form_widget(form) }}
+                <div>
+                    <input type="submit" value="{{ 'registration.submit'|trans }}" />
+                </div>
+            {{ form_end(form) }}
+        </div>
+        <div class="displayCenter">
+            <a class="margin-boutton-login" href="{{ path('fos_user_security_login') }}">Se connecter</a>
+            <a class="margin-boutton-login" href="{{ path('accueil') }}">Acceuil</a>
+        </div>
+    </div>
+</main>
+
+
+

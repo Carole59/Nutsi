@@ -1,0 +1,126 @@
+{% extends 'commun/base.html.twig' %}
+{% block content %}
+
+<main>
+
+    <section id="refe" class="paddingArticle">
+        <div class="container-fluid">
+            <div class="row justify-content-between align-items-center  p-2">
+
+                <div class="col-4">
+                    <h2>La Référence</h2><br>
+                    <p>Avenue des 4 ponts<br>33520 Bruges<br>06 18 79 01 25<br></p>
+                </div>
+                <div class="col-4"><img src="{{ asset('img/ref1.jpg') }}" alt="ref" class="img-fluid"></div>
+                <div class="col-4">
+                <p text-lg-center>Dans un bel endroit aux portes de Bordeaux, à 2 mn de la sortie 6 de la rocade bordelaise,
+                    ce petit coin de paradis est implanté au cœur d’un très beau site naturel.
+                    Idéal pour les petites comme pour les grandes réceptions, Nutsi & David (Ld Prestige) mettront tout
+                    leur professionnalisme et leur passion pour vous accompagner dans l'organisation de vos événements.
+                    La Référence dispose d’une grande salle de réception de 300 m² d'une capacité de 180 personnes assises,
+                    ainsi que le matériel pour la sonorisation et la mise en lumière.
+                    Deux vastes terrasses en bois de 200 m² offrant une jolie vue sur le lac.
+                    A l'étage un charmant loft de 200 m² insolite de type « chalet de montagne ».</p>
+            </div>
+            </div>
+            <div class="btn">
+            <button type="submit" class="btn btn-secondary"><a href="#retour">Retour</a></button>
+            </div>
+        </div>
+    </section>
+    <nav>
+        <section class="description paddingArticle">
+            <div class="container-fluid">
+                <div class="row justify-content-between align-items-center  p-2">
+
+            <aside class="aside">
+                <p class="PUB">Nos partenaires</p>
+                <p>DJ<br> Ld Prestige<a href="https://www.ldprestige.net/" target="_blank">
+                        <img src="{{ asset("img/logold.jpg")}}" alt="ld" class="img-fluid"></a></p>
+                <p>Fleuriste<br>Floralement votre<a href="https://www.floralement-votre.fr/" target="_blank">
+                        <img src="{{ asset("img/floral.jpeg")}}" alt="floral" class="img-fluid"></a></p>
+                <p>Traiteur<br></p>
+            </aside>
+
+                    <div class="col-4"><img src="{{ asset('img/nutsi.png') }}" alt="nutsi" class="img-fluid"></div>
+                    <div class="col-6">
+                            <p class="textNutsi">Le Lorem Ipsum est simplement du faux texte employé
+                            dans la composition et la mise en page avant impression. Le Lorem Ipsum
+                            est le faux texte standard de l'imprimerie depuis les années 1500, quand
+                            un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser
+                            un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq
+                            siècles, mais s'est aussi adapté à la bureautique informatique, sans que
+                            son contenu n'en soit modifié. Il a été popularisé dans les années 1960
+                            grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum,
+                            et, plus récemment, par son inclusion dans des applications de mise en page
+                            de texte, comme Aldus PageMaker.</p>
+                    </div>
+                </div>
+                <div class="btn">
+                <button type="submit" class="btn btn-secondary"><a href="#retour">Retour</a></button>
+                </div>
+            </div>
+        </section>
+    </nav>
+<section class="galerie">
+    <div class="paddingArticle">
+        <h1 id="gal">Galerie</h1>
+        <div class="imageGalerie">
+
+                <div class="imageGalerie">
+                    <div><img src="{{ asset('img/18.jpg') }}" alt="déco" class="img-fluid"></div>
+                    <div><img src="{{ asset('img/20.jpg') }}" alt="déco" class="img-fluid"></div>
+                    <div><img src="{{ asset('img/21.jpg') }}" alt="déco" class="img-fluid"></div>
+                    <div><img src="{{ asset('img/23.jpg') }}" alt="déco" class="img-fluid"></div>
+                    <div><img src="{{ asset('img/24.jpg') }}" alt="déco" class="img-fluid"></div>
+                    <div><img src="{{ asset('img/19.jpg') }}" alt="déco" class="img-fluid"></div>
+                    <div><img src="{{ asset('img/17.jpg') }}" alt="déco" class="img-fluid"></div>
+        </div>
+        </div>
+            <div class="voir">
+            <a href="{{ path('galerie') }}" target="_blank">Voir plus...</a>
+
+            </div>
+        <div class="btn">
+            <button type="submit" class="btn btn-secondary"><a href="#retour">Retour</a></button>
+        </div>
+    </div>
+
+</section>
+    <section class="presta">
+    <div class="paddingArticle">
+        <h1 id="presta"></h1>
+        <div class="container-fluid">
+            <div class="row  m-4 align-items-center">
+                <h4>Location décorations :</h4>
+                <p>Verrerie &amp; Chandelier - Objet décoratif - Mobilier de décoration - Plafond mousseline &amp; lycra
+                    Guirlande lumineuse &amp; Led
+                    Housse de chaise &amp; Noeud - Chemin de table - Structure design...</p>
+                <h4>Location de salle "La Référence" :</h4>
+                <p> Week-end de Mai à fin Octobre du Vendredi 18h au dimanche 18h - 3600 €
+                    Week-end de Novembre à fin Avril du Vendredi 18h au dimanche 18h - 2800 €</p>
+                <div class="btn">
+                    <button type="submit" class="btn btn-secondary"><a href="#retour">Retour</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+<section id="cont">
+    <div class="paddingArticle">
+        <h3>Contactez-moi</h3>
+        <section class="form">
+            {{ form(contactFormView) }}
+
+        </section>
+        <div class="btn">
+            <button type="submit" class="btn btn-secondary"><a href="#retour">Retour</a></button>
+        </div>
+
+</div>
+</section>
+
+</main>
+
+{% endblock %}

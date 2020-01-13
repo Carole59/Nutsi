@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+<title>Edit GaleriePhotos</title>
+
+{% block body %}
+    <h1>Edit GaleriePhotos</h1>
+
+    {{ include('galerie_photos/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('galerie_photos_index') }}">Revenir à la liste</a>
+
+    {{ include('galerie_photos/_delete_form.html.twig') }}
+{% endblock %}

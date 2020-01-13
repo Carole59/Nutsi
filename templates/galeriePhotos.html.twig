@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="author" content="Woodstock">
+    <meta name="description" content="Mon site parle de préparation d'un mariage">
+    <meta name="keywords" content="html, css, tags, balises">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <link href="https://fonts.googleapis.com/css?family=Cookie&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shojumaru&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+    <title>
+        NUTSI
+    </title>
+</head>
+
+<body>
+<div class="backImglogin">
+{% block content %}
+    <section id="photoGalerie">
+        <div class="backImglogin">
+        <h3 id="galerie">Galerie photos</h3>
+        <div class="imageGaleriePhotos">
+
+            <div><img src="{{ asset('img/18.jpg') }}" alt="déco" class="img-fluid"></div>
+            <div><img src="{{ asset('img/20.jpg') }}" alt="déco" class="img-fluid"></div>
+            <div><img src="{{ asset('img/21.jpg') }}" alt="déco" class="img-fluid"></div>
+            <div><img src="{{ asset('img/23.jpg') }}" alt="déco" class="img-fluid"></div>
+            <div><img src="{{ asset('img/24.jpg') }}" alt="déco" class="img-fluid"></div>
+            <div><img src="{{ asset('img/19.jpg') }}" alt="déco" class="img-fluid"></div>
+            <div><img src="{{ asset('img/17.jpg') }}" alt="déco" class="img-fluid"></div>
+<div class="photos">
+            <a href="galeriePhotos.html.twig" target="_blank">Galerie<img src="{{ asset("img")}}"
+            alt="déco" class="img-fluid"></a>
+        </div>
+        </div>
+        <div class="btn">
+            <button type="submit" class="btn btn-secondary"><a href="#retour">Retour</a></button>
+        </div>
+        </div>
+    </section>
+
+{% endblock %}
+</div>
+</body>

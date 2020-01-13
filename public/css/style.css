@@ -1,0 +1,227 @@
+/* <!--Accueil--> */
+/* <!--1er bandeau--> */
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.logoHeader{
+    display-flex:flex;
+    height:200px;
+    width:300px;
+    padding: 20px;
+    margin:40px;
+}
+/* <!--jj-->*/
+.firstP{
+    color:whitesmoke;
+    font-family: Baskerville, serif;
+    font-size:20px;
+    text-align: center;
+    margin-left: 380px;
+}
+.name_form_name_input{
+    width: 300px;
+    background-color: #d47cff;
+
+}
+.name_form_description_input{
+    width: 300px;
+    background-color: #d47cff;
+}
+.article_form_couleur_input{
+    width: 300px;
+    background-color: #d47cff;
+}
+.article_form_dimension_input{
+    width: 300px;
+    background-color: #d47cff;
+}
+/* <!--header-->*/
+.txtHeader{
+    color:black;
+    font-family: 'Cookie', cursive;
+    font-size: 10px;
+    margin-left: 600px;
+}
+.strongRose{
+    color: rgb(192, 106, 210);
+}
+
+.wallpaperHeader{
+    background-image: url("../img/rosesHeader (1).jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.backImglogin{
+    background-image: url("../img/rosesHeader (1).jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.login{
+    text-align: center;
+}
+.colorHeader{
+    background-color: rgba(29, 29, 29, 0.38);
+    height:100%;
+}
+
+/* <!--Retour accueil de la page galerie-->*/
+.colorAccueil{
+    background-color: rgba(29, 29, 29, 0.38);
+    height:100%;
+}
+.colorConnect{
+    background-color: rgba(29, 29, 29, 0.38);
+    height:100%;
+}
+.displayCenter{
+    display: flex;
+    justify-content: center;
+}
+.displayAround{
+    display: flex;
+    justify-content: space-around;
+}
+.displayBetween{
+    display: flex;
+    justify-content: space-between;
+}
+.refe{
+    width: 300px
+}
+.description{
+    background-color: rgba(210,145,188,0.2);
+    text-align: center;
+}
+#photo{
+    background-color: rgb(168, 131, 172);
+}
+.text-center{
+    text-align: center;
+    width: 100%;
+    margin:30px auto;
+    padding: 10px;
+    background-color: rgba(48, 75, 250, 0.5);
+    border-radius: 20px;
+}
+.imageGalerie{
+    background-color: purple;
+    display: flex;
+    justify-items: center;
+}
+
+h1{
+    color:rebeccapurple;
+    font-family: 'Dancing Script', cursive;
+}
+/* <!--liens accès aux pages-->*/
+a{
+    color: #aebef3;
+    font-size:23px;
+}
+a:hover{
+    text-decoration:none;
+    color: #dec3c3;
+    font-size:28px;
+}
+.text-align-center{
+    text-align: center;
+}
+.margin-boutton-login{
+    margin: 100px 70px;
+    color: white;
+}
+.margin-login-block{
+    padding: 150px 0 0 0;
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+
+}
+h2{
+    color: rgb(94, 57, 99);
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    text-align: center;
+}
+/* <!--contact-->*/
+
+.form{
+    width: 60%;
+    text-align: center;
+    margin:100px auto;
+    padding: 10px;
+    background-color: rgba(48, 75, 250, 0.5);
+    border-radius: 20px;
+
+}
+    /**
+    2ème bandeau
+     */
+
+.aside {
+    color:white;
+    font-size: 10px;
+    display:block;
+    height:50vh;
+    width: 20vh;
+    background-color: #8959A8;
+    padding: 10px;
+    text-align: center;
+}
+
+h3{
+    background-color: rgba(202, 130, 217, 0.84);
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    text-align: center;
+}
+h4{
+    color: rgb(94, 57, 99);
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    text-align: center;
+}
+
+.paddingArticle{
+    padding: 3vh 50px;
+}
+.presta{
+    background-color: rgba(210,145,188,0.2);
+}
+.voir{
+    text-align: right;
+}
+
+/* <!--Pied de page-->*/
+footer {
+    background-color: rgb(168, 168, 168);
+}
+
+/* <!--largeur des écrans-->*/
+@media screen and (max-width: 625px)
+{
+    html { font-size: 0.8em!important; }
+    /* propriétés pour mobile */
+}
+@media screen and (max-width: 976px){
+    html { font-size: 0.8em!important; }
+
+    /* propriétés pour tablette */
+}
+@media (max-width: 1024px) {
+    html { font-size: 0.9em!important; }
+}
+
+@media (max-width: 980px) {
+    html { font-size: 0.8em!important; }
+}
+
+
+

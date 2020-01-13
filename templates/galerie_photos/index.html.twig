@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<title>GaleriePhotos index</title>
+
+{% block body %}
+    <h1>GaleriePhotos index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for galerie_photo in galerie_photos %}
+            <tr>
+                <td>{{ galerie_photo.id }}</td>
+                <td>
+                    <a href="{{ path('galerie_photos_show', {'id': galerie_photo.id}) }}">show</a>
+                    <a href="{{ path('galerie_photos_edit', {'id': galerie_photo.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="2">Aucun enregistrement</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('galerie_photos_new') }}">Nouvelle photo</a>
+{% endblock %}
